@@ -1,3 +1,4 @@
+html_file = open('../jacob_website/summer2022/game1.html','w')
 #Column names and colunm
 columns = {'data':0, 'time':1, 'tempout':2, 'windspeed': 7}
 
@@ -35,3 +36,5 @@ windchill=[]
 for temp, windspeed in zip(data['tempout'], data['windspeed']):
     windchill.append(estimate_windchill(temp, windspeed))
 
+html_file.write('kill')
+html_file.close()
